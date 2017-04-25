@@ -1,16 +1,13 @@
 {
-  "name": "katayuno-20170404",
+  "name": "katayuno-20170411-wackamole",
   "version": "1.0.0",
   "main": "web/index.html",
-  "description": "Katayuno día 04 de abril de 2017",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "description": "Katayuno día 11 de abril de 2017",
   "keywords": [
     "javascript"
   ],
   "author": "Rafael Minguet García",
-  "license": "MIT",
+  "license": "GPLv3",
   "devDependencies": {
     "babel-cli": "^6.24.0",
     "babel-core": "^6.24.0",
@@ -25,7 +22,6 @@
     "grunt-contrib-copy": "^1.0.0",
     "grunt-contrib-watch": "^1.0.0",
     "grunt-shell": "^2.1.0",
-    "jquery": "^3.1.1",
     "nyc": "^10.1.2",
     "rollup": "^0.41.4",
     "rollup-plugin-babel": "^2.7.1",
@@ -35,8 +31,6 @@
     "tape": "^4.6.3"
   },
   "dependencies": {
-    "grunt-cli": "^1.2.0",
-    "material-design-icons": "^3.0.1",
-    "materialize-css": "^0.98.0"
+    "grunt-cli": "^1.2.0"
   }
 }

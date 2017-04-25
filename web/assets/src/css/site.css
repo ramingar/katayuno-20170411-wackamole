@@ -2,3 +2,31 @@ body {
     font-size   : 14px;
     font-family : monospace;
 }
+
+.back-image-centered {
+    background-repeat   : no-repeat;
+    background-position : center;
+    background-size     : contain;
+}
+
+.hole {
+    background-image : url(../img/dirt.svg);
+    height           : 100px;
+    width            : 100px;
+    position         : relative;
+    display          : inline-block;
+    margin           : 25px;
+}
+
+.mole {
+    background-image : url(../img/mole.svg);
+    height           : 75px;
+    width            : 100px;
+    position         : absolute;
+    top              : -25px;
+    display          : none;
+}
+
+.display {
+    display : block;
+}
