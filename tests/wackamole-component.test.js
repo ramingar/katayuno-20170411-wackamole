@@ -1,48 +1,7 @@
 import test from 'tape';
 
 // Component to test
-
-const WackAMole = function () {
-    let score = 0;
-
-    const holes = [false, false, false, false, false, false];
-
-    const popMole = function (hole = 0) {
-        if (holes[hole]) {
-            return false;
-        }
-        holes[hole] = true;
-        return true;
-    };
-
-    const hideMole = function (hole = 0) {
-        if (!holes[hole]) {
-            return false;
-        }
-        holes[hole] = false;
-        return true;
-    };
-
-    const isMoleVisible = function (hole = 0) {
-        return holes[hole];
-    };
-
-    const addPoint = function () {
-        score++;
-    };
-
-    const hit = function (hole = 0) {
-        if (hideMole(hole)) {
-            addPoint();
-        }
-    };
-
-    const getScore = function () {
-        return score;
-    };
-
-    return {popMole, hideMole, isMoleVisible, addPoint, getScore, holes, hit};
-};
+import WackAMole from '../web/assets/src/js/wackamole.component';
 
 // Testear que cuando creamos una instancia nueva del juego el topo está escondido
 test('-------- Component: In a new instance no mole must exist', (assert) => {

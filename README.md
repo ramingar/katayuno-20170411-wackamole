@@ -5,13 +5,13 @@ To install:
 # grunt
 ```
 
-To run tests:
+Tests:
 
 ```
 # grunt tests
 ```
 
-To run coverage:
+Coverage:
 
 ```
 # grunt coverage

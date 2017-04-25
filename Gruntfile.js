@@ -2,7 +2,7 @@ module.exports = function (grunt) {
     grunt.initConfig({
         watch: {
             scripts: {
-                files: ['web/assets/src/js/*.js'],
+                files: ['web/assets/src/**/*.*'],
                 tasks: ['copy', 'shell:rollupDev']
             }
         },
@@ -25,28 +25,17 @@ module.exports = function (grunt) {
                 files: [
                     {
                         expand: true,
-                        cwd: 'node_modules/material-design-icons/iconfont/',
+                        cwd: 'web/assets/src/img/',
                         src: ['**'],
-                        dest: 'web/assets/build/fonts/material-design-icons/'
+                        dest: 'web/assets/build/img/'
                     },
                     {
                         expand: true,
                         flatten: true,
                         src: [
-                            'node_modules/materialize-css/dist/css/materialize.min.css',
                             'web/assets/src/css/site.css'
                         ],
                         dest: 'web/assets/build/css/',
-                        filter: 'isFile'
-                    },
-                    {
-                        expand: true,
-                        flatten: true,
-                        src: [
-                            'node_modules/jquery/dist/jquery.min.js',
-                            'node_modules/materialize-css/dist/js/materialize.min.js'
-                        ],
-                        dest: 'web/assets/build/js/',
                         filter: 'isFile'
                     }
                 ]
