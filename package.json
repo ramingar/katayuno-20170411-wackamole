@@ -1,16 +1,13 @@
 {
-  "name": "katayuno-20170404",
+  "name": "katayuno-20170411-wackamole",
   "version": "1.0.0",
   "main": "web/index.html",
-  "description": "Katayuno día 04 de abril de 2017",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "description": "Katayuno día 11 de abril de 2017",
   "keywords": [
     "javascript"
   ],
   "author": "Rafael Minguet García",
-  "license": "MIT",
+  "license": "GPLv3",
   "devDependencies": {
     "babel-cli": "^6.24.0",
     "babel-core": "^6.24.0",
